@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新着商品 - Amazon.co.jp クローン</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/new-arrivals.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー部分は共通 -->
+    <header>
+      <!-- ... 既存のヘッダーコードをコピー ... -->
+    </header>
+
+    <main>
+      <div class="new-arrivals-header">
+        <h1>新着商品</h1>
+        <div class="filter-options">
+          <select class="category-select">
+            <option value="all">すべてのカテゴリー</option>
+            <option value="electronics">家電・カメラ</option>
+            <option value="computers">パソコン・オフィス</option>
+            <option value="home">ホーム＆キッチン</option>
+          </select>
+          <select class="sort-select">
+            <option value="newest">新着順</option>
+            <option value="price-low">価格が安い順</option>
+            <option value="price-high">価格が高い順</option>
+            <option value="rating">評価が高い順</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="new-arrivals-content">
+        <div class="featured-items">
+          <h2>注目の新商品</h2>
+          <div class="featured-grid">
+            <div class="featured-item">
+              <div class="new-badge">NEW</div>
+              <img src="https://placehold.jp/300x300.png" alt="新商品画像" />
+              <div class="product-info">
+                <h3>新商品名がここに入ります</h3>
+                <div class="price">¥12,800</div>
+                <div class="release-date">発売日: 2024年3月1日</div>
+                <div class="prime-badge">
+                  <i class="fas fa-check"></i> プライム
+                </div>
+              </div>
+            </div>
+            <!-- 他の注目商品 -->
+          </div>
+        </div>
+
+        <div class="coming-soon">
+          <h2>近日発売</h2>
+          <div class="coming-soon-grid">
+            <div class="coming-soon-item">
+              <img src="https://placehold.jp/250x250.png" alt="発売予定商品" />
+              <div class="product-info">
+                <h3>発売予定商品名</h3>
+                <div class="price">¥9,800</div>
+                <div class="release-date">発売予定: 2024年4月1日</div>
+                <button class="pre-order">予約する</button>
+              </div>
+            </div>
+            <!-- 他の発売予定商品 -->
+          </div>
+        </div>
+
+        <div class="all-new-items">
+          <h2>すべての新着商品</h2>
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="new-badge">NEW</div>
+              <img src="https://placehold.jp/200x200.png" alt="商品画像" />
+              <div class="product-info">
+                <h3>商品名がここに入ります</h3>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span>(42)</span>
+                </div>
+                <div class="price">¥5,980</div>
+                <div class="arrival-date">入荷日: 2024年3月1日</div>
+              </div>
+            </div>
+            <!-- 他の商品カード -->
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <button>さらに表示</button>
+      </div>
+    </main>
+
+    <!-- フッター部分は共通 -->
+    <footer>
+      <!-- ... 既存のフッターコードをコピー ... -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/new-arrivals.js"></script>
+  </body>
+</html>

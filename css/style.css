@@ -1,0 +1,220 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ヘッダースタイル */
+header {
+  background-color: #131921;
+  color: white;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.delivery-address {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delivery-address div {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  height: 40px;
+}
+
+.search-bar select {
+  width: 60px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0 10px;
+  border: none;
+}
+
+.search-bar button {
+  width: 45px;
+  background-color: #febd69;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.account,
+.orders {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ナビゲーション */
+.header-nav {
+  background-color: #232f3e;
+  padding: 5px 20px;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header-nav li {
+  color: white;
+  cursor: pointer;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-section {
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.discount {
+  color: #cc0c39;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.prime {
+  color: #00a8e1;
+  margin-top: 5px;
+}
+
+/* フッター */
+footer {
+  background-color: #232f3e;
+  color: white;
+  margin-top: 40px;
+}
+
+.back-to-top {
+  background-color: #37475a;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #485769;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #131921;
+  padding: 20px;
+  text-align: center;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .header-top {
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header-nav ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -1,0 +1,163 @@
+.prime-hero {
+  background: linear-gradient(135deg, #00a8e1 0%, #232f3e 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.prime-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.prime-hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.prime-hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.prime-join-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.prime-join-button:hover {
+  background-color: #ffa31a;
+}
+
+.prime-benefits {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.prime-benefits h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card i {
+  font-size: 48px;
+  color: #00a8e1;
+  margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.prime-pricing {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.prime-pricing h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.pricing-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured {
+  transform: scale(1.05);
+  border: 2px solid #00a8e1;
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pricing-card .price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00a8e1;
+  margin-bottom: 10px;
+}
+
+.pricing-card button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pricing-card button:hover {
+  background-color: #ffa31a;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .prime-hero h1 {
+    font-size: 36px;
+  }
+
+  .prime-hero p {
+    font-size: 18px;
+  }
+
+  .pricing-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+}

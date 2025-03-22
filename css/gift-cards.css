@@ -1,0 +1,241 @@
+/* ヒーローセクション */
+.gift-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://placehold.jp/1920x500.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+/* ギフト券の種類 */
+.gift-types {
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.gift-types h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.type-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.type-card:hover {
+  transform: translateY(-5px);
+}
+
+.type-card i {
+  font-size: 3rem;
+  color: #ff9900;
+  margin-bottom: 1rem;
+}
+
+.type-card h3 {
+  margin-bottom: 1rem;
+}
+
+.type-card button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.type-card button:hover {
+  background-color: #ff8800;
+}
+
+/* シーンで選ぶ */
+.gift-occasions {
+  padding: 4rem 2rem;
+}
+
+.gift-occasions h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.occasions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.occasion-card {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.occasion-card:hover {
+  transform: scale(1.05);
+}
+
+.occasion-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* カスタマイズフォーム */
+.gift-customize {
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+}
+
+.gift-customize h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.customize-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.design-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.design-options img {
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.design-options img:hover {
+  border-color: #ff9900;
+}
+
+.customize-submit {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.customize-submit:hover {
+  background-color: #ff8800;
+}
+
+/* ギフト券情報 */
+.gift-info {
+  padding: 4rem 2rem;
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-content h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.info-item i {
+  font-size: 3rem;
+  color: #ff9900;
+  margin-bottom: 1rem;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .gift-types,
+  .gift-occasions,
+  .gift-customize,
+  .gift-info {
+    padding: 2rem 1rem;
+  }
+}

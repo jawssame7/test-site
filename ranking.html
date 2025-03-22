@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ランキング - Amazon.co.jp クローン</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ranking.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー部分は共通 -->
+    <header>
+      <!-- ... 既存のヘッダーコードをコピー ... -->
+    </header>
+
+    <main>
+      <div class="ranking-header">
+        <h1>ランキング</h1>
+        <div class="ranking-tabs">
+          <button class="tab-button active">総合</button>
+          <button class="tab-button">売上</button>
+          <button class="tab-button">レビュー</button>
+          <button class="tab-button">新着</button>
+        </div>
+      </div>
+
+      <div class="ranking-content">
+        <div class="category-filter">
+          <h2>カテゴリー</h2>
+          <ul>
+            <li class="active">すべて</li>
+            <li>家電・カメラ</li>
+            <li>パソコン・オフィス</li>
+            <li>ホーム＆キッチン</li>
+            <li>食品・飲料</li>
+            <li>本・コミック</li>
+          </ul>
+        </div>
+
+        <div class="ranking-list">
+          <div class="ranking-item">
+            <div class="rank">1</div>
+            <img src="https://placehold.jp/150x150.png" alt="商品画像" />
+            <div class="product-info">
+              <h3>人気商品名がここに入ります</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(4,234)</span>
+              </div>
+              <div class="price">¥2,980</div>
+              <div class="prime-badge">
+                <i class="fas fa-check"></i> プライム
+              </div>
+            </div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="rank">2</div>
+            <img src="https://placehold.jp/150x150.png" alt="商品画像" />
+            <div class="product-info">
+              <h3>別の人気商品名がここに入ります</h3>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(2,845)</span>
+              </div>
+              <div class="price">¥3,480</div>
+              <div class="prime-badge">
+                <i class="fas fa-check"></i> プライム
+              </div>
+            </div>
+          </div>
+
+          <!-- 他のランキングアイテム -->
+        </div>
+      </div>
+
+      <div class="load-more">
+        <button>さらに表示</button>
+      </div>
+    </main>
+
+    <!-- フッター部分は共通 -->
+    <footer>
+      <!-- ... 既存のフッターコードをコピー ... -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/ranking.js"></script>
+  </body>
+</html>

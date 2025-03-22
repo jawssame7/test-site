@@ -1,0 +1,237 @@
+.basics-hero {
+  background: linear-gradient(135deg, #232f3e 0%, #131921 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* カテゴリーセクション */
+.basics-categories {
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.basics-categories h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  font-size: 18px;
+  color: #232f3e;
+}
+
+/* ベストセラーセクション */
+.bestsellers {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  margin-bottom: 60px;
+}
+
+.bestsellers h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #0066c0;
+}
+
+.rating {
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  color: #666;
+  margin-left: 5px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* お買い得情報セクション */
+.deals {
+  padding: 40px 20px;
+  margin-bottom: 60px;
+}
+
+.deals h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.deal-card {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #cc0c39;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #cc0c39;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.deal-expires {
+  color: #cc0c39;
+  font-size: 14px;
+}
+
+/* 品質保証セクション */
+.quality-guarantee {
+  background-color: #232f3e;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.guarantee-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.guarantee-content i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ff9900;
+}
+
+.guarantee-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.guarantee-content p {
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .category-grid,
+  .product-grid,
+  .deals-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

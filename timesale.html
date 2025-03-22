@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイムセール - Amazon.co.jp クローン</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/timesale.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ヘッダー部分は共通なのでindex.htmlと同じ -->
+    <header>
+      <!-- ... 既存のヘッダーコードをコピー ... -->
+    </header>
+
+    <main>
+      <div class="timesale-header">
+        <h1>タイムセール</h1>
+        <div class="timesale-filter">
+          <select>
+            <option>すべてのカテゴリー</option>
+            <option>家電・カメラ</option>
+            <option>パソコン・オフィス</option>
+            <option>ホーム＆キッチン</option>
+          </select>
+          <select>
+            <option>割引率：高い順</option>
+            <option>割引率：低い順</option>
+            <option>価格：高い順</option>
+            <option>価格：低い順</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="timesale-grid">
+        <!-- タイムセール商品カード -->
+        <div class="product-card">
+          <div class="discount-badge">50% OFF</div>
+          <img src="https://placehold.jp/300x300.png" alt="商品画像" />
+          <div class="product-info">
+            <h3>商品名がここに入ります</h3>
+            <div class="price-info">
+              <span class="current-price">¥4,980</span>
+              <span class="original-price">¥9,960</span>
+            </div>
+            <div class="time-remaining">残り時間: 05:23:45</div>
+            <div class="prime-badge"><i class="fas fa-check"></i> プライム</div>
+          </div>
+        </div>
+        <!-- 複数の商品カードを追加 -->
+        <div class="product-card">
+          <div class="discount-badge">30% OFF</div>
+          <img src="https://placehold.jp/300x300.png" alt="商品画像" />
+          <div class="product-info">
+            <h3>別の商品名がここに入ります</h3>
+            <div class="price-info">
+              <span class="current-price">¥3,480</span>
+              <span class="original-price">¥4,980</span>
+            </div>
+            <div class="time-remaining">残り時間: 02:45:12</div>
+            <div class="prime-badge"><i class="fas fa-check"></i> プライム</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-more">
+        <button>さらに表示</button>
+      </div>
+    </main>
+
+    <!-- フッター部分は共通 -->
+    <footer>
+      <!-- ... 既存のフッターコードをコピー ... -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/timesale.js"></script>
+  </body>
+</html>

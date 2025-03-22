@@ -1,0 +1,181 @@
+.ranking-header {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.ranking-header h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.ranking-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-button {
+  padding: 8px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-button.active {
+  color: #ff9900;
+  border-bottom-color: #ff9900;
+}
+
+.ranking-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-filter {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.category-filter h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.category-filter ul {
+  list-style: none;
+}
+
+.category-filter li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.category-filter li:hover {
+  background-color: #f8f8f8;
+}
+
+.category-filter li.active {
+  background-color: #f0f2f2;
+  font-weight: bold;
+}
+
+.ranking-list {
+  flex: 1;
+}
+
+.ranking-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.ranking-item:hover {
+  transform: translateY(-2px);
+}
+
+.rank {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9900;
+  min-width: 40px;
+  text-align: center;
+}
+
+.ranking-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0066c0;
+}
+
+.rating {
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+.rating span {
+  color: #666;
+  margin-left: 5px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.prime-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #00a8e1;
+  font-size: 14px;
+}
+
+.load-more {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.load-more button {
+  padding: 10px 40px;
+  background-color: #f0f2f2;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.load-more button:hover {
+  background-color: #e7e9ec;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .ranking-content {
+    flex-direction: column;
+  }
+
+  .category-filter {
+    width: 100%;
+  }
+
+  .ranking-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff9900;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .ranking-item {
+    position: relative;
+    padding-top: 40px;
+  }
+}

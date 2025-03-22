@@ -86,18 +86,39 @@ header {
 /* ナビゲーション */
 .header-nav {
   background-color: #232f3e;
-  padding: 5px 20px;
+  padding: 0.5rem 0;
 }
 
 .header-nav ul {
-  display: flex;
   list-style: none;
-  gap: 20px;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-nav li {
   color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #febd69;
+}
+
+.header-nav i {
+  margin-right: 0.5rem;
 }
 
 /* メインコンテンツ */
@@ -213,8 +234,12 @@ footer {
   }
 
   .header-nav ul {
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .header-nav li {
+    font-size: 0.9rem;
   }
 }
